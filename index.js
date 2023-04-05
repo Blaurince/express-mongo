@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-
+app.get("/")
 
 app.get("/plants", getAllPlants) ;
 app.post("/plants", addPlant);
